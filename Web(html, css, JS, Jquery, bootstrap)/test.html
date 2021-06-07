@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body onload="startTime()">
+
+<h2 id="id2">daymode</h2>
+
+<div id="txt"></div>
+<br></br>
+<button id="myBtn1">modeTurnOver</button>
+
+<script>
+
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+
+  document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+
+if(h < 18){
+    document.body.style.backgroundColor = 'white';
+    document.getElementById('id2').style.color = 'black';
+    document.getElementById('txt').style.color = 'black';
+}
+else{
+    document.body.style.backgroundColor = 'black';
+    document.getElementById('id2').style.color = 'white';
+    document.getElementById('txt').style.color = 'white';
+}
+
+  var t = setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+
+let daymodeon = true;
+
+document.getElementById("myBtn1").addEventListener("click", myFunction1);
+
+function myFunction1() {
+  if(daymodeon){
+    document.body.style.backgroundColor = 'white';
+    document.getElementById('id2').style.color = 'black';
+    document.getElementById('txt').style.color = 'black';
+    daymodeon = false;
+  }
+
+  else{
+    document.body.style.backgroundColor = 'black';
+    document.getElementById('id2').style.color = 'white';
+    document.getElementById('txt').style.color = 'white';
+    daymodeon = true;
+  }
+}
+
+</script>
+
+</body>
+
+</html>
