@@ -40,8 +40,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
         
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">            
             <script>
                 $(document).ready(function(){
                         $("#delete_btn").click(function(){
@@ -83,13 +82,14 @@
         var vi="";
 
         for(var i=0;i<obj.students.length;i++){
-            vi += '<div class="col-xs-12 col-sm-6 col-lg-4 col-xl-3">' 
+            vi += '<div class="col-xs-12 col-sm-6 col-lg-4 col-xl-3" id="student">' 
                     + '<div class="card" style="width: 100%; margin-bottom: 20px;">' 
                     + '<img src="..." class="card-img-top" alt="...">' 
                         + '<div class="card-body">'
                             + '<h5 class="card-title">' + obj.students[i].name + '</h5>'
                             + '<p class="card-text">' + obj.students[i].Intro + '</p>'
                             + '<a href="#" onClick=editT($("a").index(this)) class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Go somewhere</a>'
+                            + '<button onClick=deleteDiv($("button").index(this)>Delete</button>'
                         + '</div>'
                     +'</div>'
                 +'</div>';  
@@ -102,6 +102,13 @@
             document.getElementById('modalBody').innerHTML = obj.students[idx].name;
         }
 
+        function deleteDiv(idx){
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#student").remove("");
+                });
+            });
+        }
     
         
     </script>
