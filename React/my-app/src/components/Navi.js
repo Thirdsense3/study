@@ -1,15 +1,26 @@
 import React, {useState, Fragment} from 'react'
 
 export default function Navi(){
-    let [urlName, setUrlName] = useState(['http://www.naver.com'])
+    let [urlName, setUrlName] = useState([
+        '네이버',
+        '다음',
+        '페이스북',
+        '인스타그램',
+        '카카오톡',
+        '라인'    
+    ]);
 
     return(
         <Fragment>
         <nav>
             <ul>
-                <li><a href="">{urlName[0]}</a></li>
-                <li><a href={urlName[1]}>CSS</a></li>
-                <li><a href="3.html">JAVASCRIPT</a></li>
+                {
+                    urlName.map((item,index)=>{
+                        return (
+                            <li key={index}>{item}</li>
+                        )
+                    })
+                }
             </ul>
         </nav>
 
