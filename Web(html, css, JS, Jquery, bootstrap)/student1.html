@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
 
-    </head>
+<head>
 
-    <body>
-        <img src="https://source.unsplash.com/random" alt="01" style="float:left;width:200px;height:200px;">
-        <script type="text/javascript" src="data.json"></script>
-        <h2 id='h2'></h2>
-        <h3 id='h3'></h3>   
-        <h4 id='h4'></h4>
+</head>
 
-    </body>
+<body>
+    <img src="https://source.unsplash.com/random" alt="01" style="float:left;width:200px;height:200px;">
+    <script type="text/javascript" src="data.json"></script>
+    <h2 id='h2'></h2>
+    <h3 id='h3'></h3>
+    <h4 id='h4'></h4>
 
-    <script>
-        var mydata = JSON.parse(data);
-        document.getElementById('h2').innerHTML = ' Name : ' + mydata.students[0].name;
-        document.getElementById('h3').innerHTML = ' Age : ' +  mydata.students[0].age;
-        document.getElementById('h4').innerHTML = ' Sex : ' +  mydata.students[0].sex;
-    </script>
+</body>
+
+<script>
+    var mydata = JSON.parse(data);
+    document.getElementById('h2').innerHTML = ' Name : ' + mydata.students[0].name;
+    document.getElementById('h3').innerHTML = ' Age : ' + mydata.students[0].age;
+    document.getElementById('h4').innerHTML = ' Sex : ' + mydata.students[0].sex;
+</script>

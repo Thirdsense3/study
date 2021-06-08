@@ -1,171 +1,181 @@
 <!DOCTYPE html>
-<html> 
-    <head>
-        <style>
-            body{
-                margin: 0px;
-                padding: 0px;
-               /* background-color: gray;*/
-            }
+<html>
 
-            header{
+<head>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            /* background-color: gray;*/
+        }
 
-            }
+        header {}
 
-            header.logo{
-                color: orange;
-                float: left;
-            }
+        header.logo {
+            color: orange;
+            float: left;
+        }
 
-            section{
-                height: 600px;
-                margin: 20px 0;
-            }
-            .container{
-                width: 800px;
-                margin: auto;
-            }
-            .contentLeft{
-                width: 50%;
-            }
-            .contentRight{
-                margin-left: 20px;
-            }
-            .container-fluid{
-                width: 100%;
-                margin: auto;
-            }
-            
-            p{
-                font-size: 12px;
-            }
-            
-            #about img{
-                width: 300px;
-                height: auto;
-            }
-            nav{
-                position: relative;
-                left: 30px;
+        section {
+            height: 600px;
+            margin: 20px 0;
+        }
 
-            }
-            nav ul{                
-                list-style-type: none;
-                padding: 0;
-                margin: 0;
-            }
+        .container {
+            width: 800px;
+            margin: auto;
+        }
 
-            nav li{
-                display: inline;
-                margin: 0 20px;
-            }
+        .contentLeft {
+            width: 50%;
+        }
 
-            .banner{
-                clear: left;
-                width: 100%;
-                height: 500px;
-                background-image: url("https://source.unsplash.com/random");
+        .contentRight {
+            margin-left: 20px;
+        }
 
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-size: cover;
-                background-color: black;
-            }
+        .container-fluid {
+            width: 100%;
+            margin: auto;
+        }
 
-            .banner .bannerText{
-                position: relative;
-                top: 200px;
-            }
+        p {
+            font-size: 12px;
+        }
 
-            .banner h2{
-                width: 300px;
-                text-align: center;
-                margin: auto;
-            }
+        #about img {
+            width: 300px;
+            height: auto;
+        }
 
-            .banner p{
-                width: 500px;
-                text-align: center;
-                margin: auto;
-            }
+        nav {
+            position: relative;
+            left: 30px;
 
-            .banner .btn{
-                width: 150px;
-                padding: 15px 0;
-                background-color: white;
-                border-radius: 20px 0 20px 0;
-                margin:auto;
-                margin-top: 50px;
-            }
-            
-        </style>
-    </head>
-    <body>
-        <header>
-            <div class ="container">
-                <div class = "navbar">
-                    <div class="logo"><h1> 클라우드 네이티브 어플리케이션 교육</h1> </div>
-                        <nav>
-                            <ul>
-                                <li>aboutUS</li>
-                                <li>portfolio</li>
-                                <li>Contact</li>
-                                <li>Library</li>
-                            </ul>
-                        </nav>
-                    </div>
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        .banner {
+            clear: left;
+            width: 100%;
+            height: 500px;
+            background-image: url("https://source.unsplash.com/random");
+
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-color: black;
+        }
+
+        .banner .bannerText {
+            position: relative;
+            top: 200px;
+        }
+
+        .banner h2 {
+            width: 300px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .banner p {
+            width: 500px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .banner .btn {
+            width: 150px;
+            padding: 15px 0;
+            background-color: white;
+            border-radius: 20px 0 20px 0;
+            margin: auto;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h1> 클라우드 네이티브 어플리케이션 교육</h1>
                 </div>
+                <nav>
+                    <ul>
+                        <li>aboutUS</li>
+                        <li>portfolio</li>
+                        <li>Contact</li>
+                        <li>Library</li>
+                    </ul>
+                </nav>
             </div>
-
-            <div class="container-fluid">
-                <div class="banner">
-                    <div class="bannerText">
-                        <h2>banner</h2>
-                        <p>React는 상호작용이 많은 UI를 만들 때 생기는 어려움을 줄여줍니다. 애플리케이션의 각 상태에 대한 간단한 뷰만 설계하세요. 그럼 React는 데이터가 변경됨에 따라 적절한 컴포넌트만 효율적으로 갱신하고 렌더링합니다. 8선언형 뷰는 코드를 예측 가능하고 디버그하기 쉽게 만들어 줍니다.</p>
-                        <p class="btn">더보기</p>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <section id = about>
-            <div>
-                <div class="contentLeft"> 
-                    <img src = "https://source.unsplash.com/random" alt="01"/> 
-                </div>
-
-                <div class="contentRight">
-                    <h3>For React</h3>
-                    <p>선언형
-                        React는 상호작용이 많은 UI를 만들 때 생기는 어려움을 줄여줍니다. 애플리케이션의 각 상태에 대한 간단한 뷰만 설계하세요. 그럼 React는 데이터가 변경됨에 따라 적절한 컴포넌트만 효율적으로 갱신하고 렌더링합니다.
-                            
-                        8선언형 뷰는 코드를 예측 가능하고 디버그하기 쉽게 만들어 줍니다.</p>
-                    <p></p>
-                </div>
-            </div>
-        </section>
-
-            <section id = portfolio >
-                <div>
-                    <div>
-                        <p>portfolio</p>
-                        <div><img src="" alt=""/></div>
-                        <div><img src="" alt=""/></div>
-                        <div><img src="" alt=""/></div>
-                        <div><img src="" alt=""/></div>
-                    </div>
-                    <div>
-                        <div><img src="" alt=""/></div>
-                        <div><img src="" alt=""/></div>
-                        <div><img src="" alt=""/></div>
-                        <div><img src="" alt=""/></div>
-                    </div>
-                </div>
-            </section>
-
-            <footer>
-                
-            </footer>
         </div>
-    </body>
+        </div>
+
+        <div class="container-fluid">
+            <div class="banner">
+                <div class="bannerText">
+                    <h2>banner</h2>
+                    <p>React는 상호작용이 많은 UI를 만들 때 생기는 어려움을 줄여줍니다. 애플리케이션의 각 상태에 대한 간단한 뷰만 설계하세요. 그럼 React는 데이터가 변경됨에 따라
+                        적절한 컴포넌트만 효율적으로 갱신하고 렌더링합니다. 8선언형 뷰는 코드를 예측 가능하고 디버그하기 쉽게 만들어 줍니다.</p>
+                    <p class="btn">더보기</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id=about>
+        <div>
+            <div class="contentLeft">
+                <img src="https://source.unsplash.com/random" alt="01" />
+            </div>
+
+            <div class="contentRight">
+                <h3>For React</h3>
+                <p>선언형
+                    React는 상호작용이 많은 UI를 만들 때 생기는 어려움을 줄여줍니다. 애플리케이션의 각 상태에 대한 간단한 뷰만 설계하세요. 그럼 React는 데이터가 변경됨에 따라 적절한
+                    컴포넌트만 효율적으로 갱신하고 렌더링합니다.
+
+                    8선언형 뷰는 코드를 예측 가능하고 디버그하기 쉽게 만들어 줍니다.</p>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <section id=portfolio>
+        <div>
+            <div>
+                <p>portfolio</p>
+                <div><img src="" alt="" /></div>
+                <div><img src="" alt="" /></div>
+                <div><img src="" alt="" /></div>
+                <div><img src="" alt="" /></div>
+            </div>
+            <div>
+                <div><img src="" alt="" /></div>
+                <div><img src="" alt="" /></div>
+                <div><img src="" alt="" /></div>
+                <div><img src="" alt="" /></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+    </div>
+</body>
+
 </html>

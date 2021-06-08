@@ -1,62 +1,61 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            .nameTable{
-                display: inline-block;
-                width: 200px;
-                height: 200px;
-                background-color: blue;
-                border: 5px solid white;
-                text-align: center;
-            }
 
-            .nameTable p {
-                font-size: 30px;
-            }
+<head>
+    <style>
+        .nameTable {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            border: 5px solid white;
+            text-align: center;
+        }
 
+        .nameTable p {
+            font-size: 30px;
+        }
+    </style>
+</head>
 
-        </style>
-    </head>
-
-    <body>
-        <div id="boxlist">
-            <!--div class="nameTable">
+<body>
+    <div id="boxlist">
+        <!--div class="nameTable">
                 <p>Name</p>
             </div-->
-        </div>    
+    </div>
 
-        <script>
-            const people = '{"students": ['
-                +'{"name": "Alpha", "age": 27, "sex": "man"},'
-                +'{"name": "Beta", "age": 28, "sex": "woman"},'
-                +'{"name": "gamma", "age": 29, "sex": "man"},'
-                +'{"name": "elpsion", "age": 30, "sex": "woman"}'
-            +']}';
+    <script>
+        const people = '{"students": [' +
+            '{"name": "Alpha", "age": 27, "sex": "man"},' +
+            '{"name": "Beta", "age": 28, "sex": "woman"},' +
+            '{"name": "gamma", "age": 29, "sex": "man"},' +
+            '{"name": "elpsion", "age": 30, "sex": "woman"}' +
+            ']}';
 
-            const myArr  = JSON.parse(people);
+        const myArr = JSON.parse(people);
 
-            let listIdx=1;
+        let listIdx = 1;
 
-            var vi ="";
+        var vi = "";
 
-            var box = '<div class="nameTable">';
+        var box = '<div class="nameTable">';
 
-            for(var i=0;i<myArr.students.length;i++){
-                vi += box;
-                vi+='<p>'+ myArr.students[i].name + '</p>';
-                vi+='<button id="myBtn'+ listIdx +'" onclick=loadPage(' + (i+1) + ');>' + 'more</button>' +  '</div>';
-                listIdx++;
-            }
+        for (var i = 0; i < myArr.students.length; i++) {
+            vi += box;
+            vi += '<p>' + myArr.students[i].name + '</p>';
+            vi += '<button id="myBtn' + listIdx + '" onclick=loadPage(' + (i + 1) + ');>' + 'more</button>' + '</div>';
+            listIdx++;
+        }
 
-            document.getElementById('boxlist').innerHTML = vi;      
+        document.getElementById('boxlist').innerHTML = vi;
 
-            function loadPage(idx){
-                var url = 'student' + idx + '.html';
-                location.href = url;
-            }
+        function loadPage(idx) {
+            var url = 'student' + idx + '.html';
+            location.href = url;
+        }
+    </script>
 
-        </script>
+</body>
 
-    </body>
 </html>
