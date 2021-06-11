@@ -1,15 +1,15 @@
 {
-    "days" :[
-        {
-            "id" : 1,
+    "days" : [
+        { 
+            "id" : 1 ,
             "day" : 1
         },
-        {
-            "id" : 2,
+        { 
+            "id" : 2 ,
             "day" : 2
         },
-        {
-            "id" : 3,
+        { 
+            "id" : 3 ,
             "day" : 3
         }
     ],
@@ -28,28 +28,28 @@
             "kor" : "사과",
             "read" : false
         },
-        {            
+        {
             "id" : 3,
             "day" : 1,
             "eng" : "banana",
-            "kor" : "바나나",
+            "kor" : "버네나",
             "read" : false
         },
         {
             "id" : 4,
             "day" : 2,
             "eng" : "student",
-            "kor" : "학생",
+            "kor" : "스튜던트",
             "read" : false
         },
         {
             "id" : 5,
             "day" : 2,
-            "eng" : "student",
-            "kor" : "학생",
+            "eng" : "티쳐",
+            "kor" : "선생님",
             "read" : false
         },
-        {            
+        {
             "id" : 6,
             "day" : 3,
             "eng" : "desk",
@@ -63,6 +63,5 @@
             "kor" : "펜",
             "read" : false
         }
-    ],
-    "products" :[]
+    ]
 }

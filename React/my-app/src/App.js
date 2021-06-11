@@ -1,35 +1,21 @@
-import './App.css'
-import Subject from './components/Subject'
-import Navi from './components/Navi'
-import Content from './components/Content'
-import React, { Component} from 'react'
-import Sample from './components/Sample'
-import DataView from './components/DataView'
+import React from 'react'
+import {BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from './components/pages/Home/Home'
+import Features from './components/pages/Features/Features'
+import "./assets/css/mystyle.css"
 
-function App() 
-{
-  return (
+function App() {
 
-    <div style={{margin:"20px"}}>
-      {/* <Subject
-        name="TheUNIONGraphix"
-        address="Korea"
-      >
-        010-xxxx-xxxx
-      </Subject>
-      <Navi></Navi>
-      <Content
-        title="HTML"
-        text="React가 제일 쉬웠어요, React 써보며 좋아요."
-      >
-      </Content> */}
-      {/* <Sample></Sample> */}
+  return(
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/"><Home/></Route>   
+        <Route exact path="/features"><Features/></Route>
+        {/* <Route exact path="/productdetail/:id/:color/:"><Productdetail/></Route> */}
+      </Switch>
+    </BrowserRouter>
+  )
 
-      <DataView></DataView>
-    </div>
-
-  
-  );
 }
 
-export default App;
+export default App

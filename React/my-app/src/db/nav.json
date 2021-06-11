@@ -1,0 +1,102 @@
+{
+    "menu" : [
+        {
+            "id" : 1,
+            "name" : "Home",
+            "url" : "/"
+        },
+        {
+            "id" : 2,
+            "name" : "Features",
+            "url" : "/features"
+        },
+        {
+            "id" : 3,
+            "name" : "Pricing",
+            "url" : "/pricing"
+        },
+        {
+            "id" : 4,
+            "name" : "FAQs",
+            "url" : "/faqs"
+        },
+        {
+            "id" : 5,
+            "name" : "About",
+            "url" : "/about"
+        }
+    ],
+    "sidemenu" : [
+        {
+            "id" : 1,
+            "name" : "fas fa-search",
+            "url" : "search"
+        },
+        {
+            "id" : 2,
+            "name" : "fas fa-user",
+            "url" : "/user"
+        },
+        {
+            "id" : 3,
+            "name" : "fas fa-random",
+            "url" : "/compare"
+        },
+        {
+            "id" : 4,
+            "name" : "far fa-heart",
+            "url" : "/wishlist"
+        },
+        {
+            "id" : 5,
+            "name" : "fas fa-shopping-bag",
+            "url" : "/cart"
+        }
+    ],
+    "category" : [
+        { 
+            "id" : 1,
+            "name" : "fashion"
+        },
+        { 
+            "id" : 2,
+            "name" : "men"
+        },
+        { 
+            "id" : 3,
+            "name" : "women"
+        }
+    ],
+    "brand" : [
+        {
+            "id" : 1,
+            "name" : "Apple Pay",
+            "img" : "fab fa-apple-pay qay",
+            "content" : "apple pay is apple pay"            
+        },
+        {
+            "id" : 2,
+            "name" : "AWS",
+            "img" : "fab fa-aws",
+            "content" : "AWS is Amazon Web Service"            
+        },        {
+            "id" : 3,
+            "name" : "Docker",
+            "img" : "fab fa-docker",
+            "content" : "docker is docker"            
+        },
+        {
+            "id" : 4,
+            "name" : "Jenkins",
+            "img" : "fab fa-jenkins",
+            "content" : "jenkins is jenskins"            
+        },
+        {
+            "id" : 5,
+            "name" : "React",
+            "img" : "fab fa-reat",
+            "content" : "React is React"            
+        }
+
+    ]
+}

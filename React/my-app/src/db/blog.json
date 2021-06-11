@@ -1,0 +1,29 @@
+[
+    {
+      "id": 1,
+      "image": "/images/01.jpg",
+      "category": ["lifestyle", "men"],
+      "title": "A guide to latest trends",
+      "url": "/blog-details-Admin",
+      "author": "Admin",
+      "authorUrl": "/blog-Admin"
+    },
+    {
+      "id": 2,
+      "image": "/images/02.jpg",
+      "category": ["lifestyle"],
+      "title": "Five ways to lead a happy life",
+      "url": "/blog-details-React",
+      "author": "React",
+      "authorUrl": "/blog-React"
+    },
+    {
+      "id": 3,
+      "image": "/images/03.jpg",
+      "category": ["lifestyle"],
+      "title": "Tips on having a happy life",
+      "url": "/blog-details-Hello",
+      "author": "Hello",
+      "authorUrl": "/blog-Hello"
+    }
+  ]
