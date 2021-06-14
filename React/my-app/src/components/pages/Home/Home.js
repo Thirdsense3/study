@@ -1,18 +1,20 @@
-import React from 'react'
+import React, { Fragment } from 'react';
 import Header from '../../layout/Header';
+import Banner from '../../elements/ui/Banner';
 import Brand from '../../elements/widgets/brand/Brand';
-import Deal from '../../pages/deal/Deal';
-import Blog from '../blog/Blog'
+import Deal from '../deal/Deal';
+import Blog from '../blog/Blog';
 import Footer from '../../layout/Footer';
 
 export default function Home() {
-    return(
-        <div id="wrap">
+    return (
+        <Fragment>
             <Header/>
+            <Banner />
             <Brand />
             <Deal />
-            <Blog/>
-            <Footer></Footer>
-        </div>
-    )
+            <Blog />
+            <Footer />
+        </Fragment>
+    );
 }

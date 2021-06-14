@@ -1,7 +1,9 @@
-export default function footerLogo() {
-    return (<div class = "col-12 col-md-2">
-        <p class = "footerLogo" > THTHTHTH </p> 
-        <p class = "copy" > adskfjba; dksjfb All right adskfjba; dksjfb All right </p> 
+
+export default function FooterLogo(){
+    return(
+        <div className="col-12 col-md-3">
+            <p className="footerLogo">The<br/><span>UNION</span><br/>Graphix</p>
+            <p className="copy">© 2021 TheUNIONGraphix .All Rights Reserved</p>
         </div>
-    )
+    );  
 }

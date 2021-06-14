@@ -1,8 +1,10 @@
 export default function Logo(){
 
     return(
-        <a href="/" className="d-flex align-items-center col-md-2 mb-2 mb-md-0 px-4 text-decoration-none">
-                TheUNIONGraphix
-        </a>
+        <div className="col-xl-2 col-lg-2 col-md-6 col-4">
+            <div className="logo">
+                <a href="/"><img alt="" src="./assets/img/logo/logo.png" /></a>
+            </div>
+        </div>
     );
 }
