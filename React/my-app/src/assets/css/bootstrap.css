@@ -21934,7 +21934,7 @@ a.default-btn {
   align-items: center;
   justify-content: center;
   height: 48px;
-  transition: all 0.5s ease;
+  transition: all 0.1s ease;
   transform: translateY(20px);
   opacity: 0;
   background-color: #a749ff;

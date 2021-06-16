@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+
 import React, { Fragment } from "react";
 
 const ProductRating = ({ ratingValue }) => {
@@ -9,7 +9,7 @@ const ProductRating = ({ ratingValue }) => {
   }
   if (ratingValue && ratingValue > 0) {
     for (let i = 0; i <= ratingValue - 1; i++) {
-      rating[i] = <i className="fas fa-star" key={i}></i>;
+      rating[i]=<i className="fas fa-star" key={i}></i>;
     }
   }
   return (
@@ -19,8 +19,5 @@ const ProductRating = ({ ratingValue }) => {
   );
 }
 
-ProductRating.propTypes = {
-  ratingValue: PropTypes.number
-};
 
 export default ProductRating;
