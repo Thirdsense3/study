@@ -1,16 +1,16 @@
 import Header from '../../layout/Header';
 import Footer from '../../layout/Footer';
+import Bread from '../../elements/ui/Bread';
+import CompareTable from '../../elements/widgets/comparetable/CompareTable';
 import { Fragment } from 'react';
-import CompareTable from '../../elements/widgets/comparetable/CompareTable'
 
-export default function Compare(){
-
+export default function Compare() {
     return(
         <Fragment>
-            <Header/>
-            <CompareTable               
-            ></CompareTable>
-            <Footer/>
+            <Header />
+            <Bread productName = "Compare"/>
+            <CompareTable />
+            <Footer />
         </Fragment>
     );
 }

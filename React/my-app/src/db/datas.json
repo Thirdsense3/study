@@ -1,22 +1,94 @@
 {
-  "compare": [],
-  "cart": [
+  "size": [
     {
-      "id": "4",
-      "name": "Lorem ipsum fashion coat",
+      "id": 1,
+      "name": "S"
+    },
+    {
+      "id": 2,
+      "name": "M"
+    },
+    {
+      "id": 3,
+      "name": "L"
+    },
+    {
+      "id": 4,
+      "name": "XL"
+    },
+    {
+      "id": 5,
+      "name": "XXL"
+    }
+  ],
+  "compare": [
+    {
+      "id": "3",
+      "name": "Lorem ipsum jacket",
       "image": [
-        "/assets/img/product/fashion/4.jpg",
-        "/assets/img/product/fashion/2.jpg",
-        "/assets/img/product/fashion/5.jpg",
-        "/assets/img/product/fashion/7.jpg",
+        "/assets/img/product/fashion/3.jpg",
+        "/assets/img/product/fashion/1.jpg",
+        "/assets/img/product/fashion/6.jpg",
+        "/assets/img/product/fashion/8.jpg",
         "/assets/img/product/fashion/9.jpg"
       ],
-      "price": 15.5,
-      "discount": 0,
-      "qty": 3,
-      "color": "brown",
+      "price": 17.45,
+      "discount": 40,
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+      "rating": 5
+    }
+  ],
+  "cart": [
+    {
+      "id": "28",
+      "name": "Lorem ipsum plant three",
+      "image": [
+        "/assets/img/product/plants/3.jpg",
+        "/assets/img/product/plants/4.jpg",
+        "/assets/img/product/plants/5.jpg",
+        "/assets/img/product/plants/6.jpg",
+        "/assets/img/product/plants/7.jpg"
+      ],
+      "price": 12.5,
+      "discount": 20,
+      "qty": 1,
+      "color": "",
       "size": ""
     },
+    {
+      "id": "90",
+      "name": "Lorem ipsum kids three",
+      "image": [
+        "/assets/img/product/fashion/25.jpg",
+        "/assets/img/product/fashion/26.jpg",
+        "/assets/img/product/fashion/27.jpg",
+        "/assets/img/product/fashion/28.jpg",
+        "/assets/img/product/fashion/29.jpg"
+      ],
+      "price": 17.45,
+      "discount": 40,
+      "qty": 1,
+      "color": "",
+      "size": ""
+    },
+    {
+      "id": "3",
+      "name": "Lorem ipsum jacket",
+      "image": [
+        "/assets/img/product/fashion/3.jpg",
+        "/assets/img/product/fashion/1.jpg",
+        "/assets/img/product/fashion/6.jpg",
+        "/assets/img/product/fashion/8.jpg",
+        "/assets/img/product/fashion/9.jpg"
+      ],
+      "price": 17.45,
+      "discount": 40,
+      "qty": 1,
+      "color": "",
+      "size": ""
+    }
+  ],
+  "wish": [
     {
       "id": "5",
       "name": "Lorem ipsum female coat",
@@ -28,13 +100,9 @@
         "/assets/img/product/fashion/9.jpg"
       ],
       "price": 25.5,
-      "discount": 10,
-      "qty": 4,
-      "color": "blue",
-      "size": ""
+      "discount": 10
     }
   ],
-  "wish": [],
   "blog": [
     {
       "id": 1,
@@ -101,8 +169,8 @@
     },
     {
       "id": 3,
-      "name": "Pricing",
-      "url": "/pricing"
+      "name": "SHOP",
+      "url": "/productlist"
     },
     {
       "id": 4,
@@ -120,25 +188,25 @@
       "id": 1,
       "name": "las la-search",
       "url": "search",
-      "count": 3
+      "count": 0
     },
     {
       "id": 2,
       "name": "las la-user-circle",
-      "url": "/user",
-      "count": 2
+      "url": "/myaccount",
+      "count": 0
     },
     {
       "id": 3,
       "name": "las la-random",
       "url": "/compare",
-      "count": 1
+      "count": 0
     },
     {
       "id": 4,
       "name": "las la-bookmark",
       "url": "/wishlist",
-      "count": 5
+      "count": 0
     },
     {
       "id": 5,
@@ -162,7 +230,31 @@
     },
     {
       "id": 4,
-      "name": "boy"
+      "name": "electronics"
+    },
+    {
+      "id": 5,
+      "name": "furniture"
+    },
+    {
+      "id": 6,
+      "name": "plant"
+    },
+    {
+      "id": 7,
+      "name": "organic food"
+    },
+    {
+      "id": 8,
+      "name": "flower"
+    },
+    {
+      "id": 9,
+      "name": "book"
+    },
+    {
+      "id": 10,
+      "name": "cosmetics"
     }
   ],
   "brand": [

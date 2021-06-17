@@ -1,51 +1,63 @@
-import React, { useState,useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import React, {useState} from 'react';
 
-export default function CartListView({ data }) {
-  const [count, setCount] = useState(1);
+export default function CartListView({data, setCartDatas}) {
 
-  return (
-    <tr>
-      <td class="product-thumbnail">
-        <Link to={`/productdetail/${data.id}`}>
-          <img class="img-fluid" src={data.image[0]} alt="" />
-        </Link>
-      </td>
+    const [count, setCount]=useState(data.qty);
 
-      <td class="product-name">
-        <Link to={`/productdetail/${data.id}`}>{data.name}</Link>
-        <div class="cart-item-variation">
-          <span>Color: {data.color}</span>
-          <span>Size: {data.size}</span>
-        </div>
-      </td>
+    const handleCountAdd = () => {
+        setCount(count+1);
+    }
 
-      <td class="product-price-cart">
-        <span class="amount old">{data.price}</span>
-        <span class="amount">
-          {(data.price * ((100 - data.discount) / 100)).toFixed(2)}
-        </span>
-      </td>
+    const handleCountDec = () => {
+        count > 1 ? setCount(count-1) : alert("최소 수량은 1개 입니다.")
+    }
 
-      <td class="product-quantity">
-        <div class="cart-plus-minus">
-          <button class="dec qtybutton">-</button>
-          <input
-            class="cart-plus-minus-box"
-            type="text"
-            readonly=""
-            value={count}
-          />
-          <button class="inc qtybutton">+</button>
-        </div>
-      </td>
+    let process = require('../../../myProcess.json');
 
-      <td class="product-subtotal">{data.price * count}</td>
-      <td class="product-remove">
-        <button /*onClick={() => handleDelete(data.id)}*/>
-          <i class="fa fa-times"></i>
-        </button>
-      </td>
-    </tr>
-  );
+    const handleDelete = (id) => {
+
+        fetch(`http://${process.IP}:${process.PORT}/cart/${id}`,{
+            method: "DELETE"
+        }).then(
+            alert("삭제 되었습니다!"),
+            fetch(`http://${process.IP}:${process.PORT}/cart`)
+            .then(res => {
+                return res.json();
+            })
+            .then(data => {
+                setCartDatas(data);
+            })
+        )
+       
+    }
+
+    return(
+        <tr>
+            <td className="product-thumbnail">
+                <Link to={`/productdetail/${data.id}`}><img className="img-fluid" src="" alt=""/></Link>
+            </td>
+            <td className="product-name">
+                <a href="/product/2">{data.name}</a>
+                <div className="cart-item-variation">
+                    <span>Color: {data.color}</span>
+                    <span>Size: {data.size}</span>
+                </div>
+            </td>
+            <td className="product-price-cart">
+                <span className="amount old">{(data.price * ((100+data.discount)/100)).toFixed(2)}</span>
+                <span className="amount">{data.price}</span>
+            </td>
+            <td className="product-quantity">
+                <div className="cart-plus-minus">
+                    <button className="dec qtybutton" onClick={()=>handleCountDec()}>-</button>
+                    <input className="cart-plus-minus-box" type="text" readonly="" value={count} />
+                    <button className="inc qtybutton" onClick={()=>handleCountAdd()}>+</button>
+                </div>
+            </td>
+            <td className="product-subtotal">{(data.price * count).toFixed(2)}</td>
+            <td className="product-remove"><button onClick={()=>handleDelete(data.id)}><i className="fa fa-times"></i></button></td>
+        </tr>
+                    
+    );
 }

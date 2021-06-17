@@ -10,7 +10,7 @@ export default function Bread({productId, productName, productUrl}){
                             <Link to="/" aria-current="page" className="active">Home</Link>
                             <span>/</span>
                         </span>
-                        <span to={productUrl}>{productName}</span>
+                        <span>{productName}</span>
                     </span>
                 </div>
             </div>

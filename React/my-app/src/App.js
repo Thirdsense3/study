@@ -5,7 +5,9 @@ import Cart from './components/pages/cart/Cart';
 import Compare from './components/pages/compare/Compare';
 import Wishlist from './components/pages/wishlist/Wishlist';
 import ProductDetail from './components/pages/ProductDetail/ProductDetail';
+import ProductList from './components/pages/productlist/ProductList';
 import Features from './components/pages/Features/Features';
+import MyAccount from './components/pages/myaccount/MyAccount';
 import './assets/css/mystyle.css';
 import './assets/css/style.css';
 import './assets/css/animate.css';
@@ -19,7 +21,7 @@ function App() {
     <BrowserRouter>
       <ToTop>
         <Switch>
-<Route exact path="/">
+          <Route exact path="/">
             <Home />
           </Route>
           <Route exact path="/compare">
@@ -36,6 +38,12 @@ function App() {
           </Route>
           <Route exact path="/productdetail/:id">
             <ProductDetail />
+          </Route>
+          <Route exact path="/productlist">
+            <ProductList />
+          </Route>
+          <Route exact path="/myaccount">
+            <MyAccount />
           </Route>
         </Switch>
       </ToTop>
