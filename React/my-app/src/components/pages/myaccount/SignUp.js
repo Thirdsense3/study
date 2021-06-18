@@ -205,6 +205,7 @@ export default function SignUp() {
                   name="password"
                   value={values.password}
                   onChange={handleChangeForm}
+                  placeholder="숫자와 문자를 조합해서 최소 8글자는 입력해 주세요."
                 />
               </div>
             </div>
