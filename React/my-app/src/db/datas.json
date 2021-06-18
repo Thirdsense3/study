@@ -1,4 +1,29 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "userId": "",
+      "pass": "",
+      "email": "",
+      "phone": ""
+    },
+    {
+      "id": 2,
+      "userId": "asdf",
+      "password": "weasdvzxc",
+      "name": "asdfads",
+      "email": "ewsfdxzc@asd",
+      "phone": "1234543234"
+    },
+    {
+      "id": 3,
+      "userId": "asdf",
+      "password": "dbbb",
+      "name": "advx",
+      "email": "sbs@bsb",
+      "phone": "1232432"
+    }
+  ],
   "size": [
     {
       "id": 1,

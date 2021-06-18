@@ -1,0 +1,12 @@
+.container{
+    margin: auto;
+    width: 500px
+}
+
+.container input{
+    margin: 20px;
+}
+
+.container input:focus{
+    background-color: aqua;
+}
