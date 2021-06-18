@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router';
 
 export default function SignUp() {
+  const history = useHistory();
+
   const [usersDatas, setUsersDatas] = useState([]);
 
   const [values, setValues] = useState({
@@ -13,11 +16,11 @@ export default function SignUp() {
   });
 
   const [guideTxts, setGuideTxts] = useState({
-    userGuide: '아이디는 최대 20자 까지 가능합니다.',
+    userGuide: '최대 20자 까지 가능합니다.',
     emailGuide: '이메일 형식에 맞게 작성해 주세요.',
     pwdGuide: '숫자와 문자를 조합해서 최소 8글자는 입력해 주세요.',
     confirmPwdGuide: '한번더 입력해 주세요.',
-    nameGuide: '이름을 입력해주세요',
+    nameGuide: '',
     phoneGuide: '. 을 입력하지 말아 주세요.',
   });
 
@@ -122,16 +125,14 @@ export default function SignUp() {
   };
 
   const handlePutUserLists = (e) => {
-    // alert(usersDatas.length);
-    // console.log(values);
+    //alert(usersDatas.length);
+    //console.log(values);
     e.preventDefault();
 
     const valid = onTextCheck();
 
-    if (!valid) {
-      console.error('retry');
-      alert('retry!!!!!!');
-    } else {
+    if (!valid) console.error('retry');
+    else {
       fetch(`http://${process.IP}:${process.PORT}/users`, {
         method: 'POST',
         headers: {
@@ -145,7 +146,11 @@ export default function SignUp() {
           email: values.email,
           phone: values.phone,
         }),
-      }).then(alert('success'));
+      }).then(
+        alert('success'),
+        history.push('/'),
+        //window.location.href = '/'
+      );
     }
   };
 
@@ -166,7 +171,7 @@ export default function SignUp() {
                   name="userId"
                   value={values.userId}
                   onChange={handleChangeForm}
-                  placeholder={guideTxts.userGuide}
+                  // placeholder="ID를 입력해 주세요."
                 />
               </div>
             </div>
@@ -200,7 +205,6 @@ export default function SignUp() {
                   name="password"
                   value={values.password}
                   onChange={handleChangeForm}
-                  placeholder={guideTxts.pwdGuide}
                 />
               </div>
             </div>
@@ -234,7 +238,6 @@ export default function SignUp() {
                   name="confirmPassword"
                   value={values.confirmPassword}
                   onChange={handleChangeForm}
-                  placeholder={guideTxts.confirmPwdGuide}
                 />
               </div>
             </div>
@@ -268,7 +271,6 @@ export default function SignUp() {
                   name="email"
                   value={values.email}
                   onChange={handleChangeForm}
-                  placeholder={guideTxts.emailGuide}
                 />
               </div>
             </div>
@@ -301,7 +303,6 @@ export default function SignUp() {
                   name="name"
                   value={values.name}
                   onChange={handleChangeForm}
-                  placeholder={guideTxts.nameGuide}
                 />
               </div>
             </div>
@@ -333,8 +334,7 @@ export default function SignUp() {
                   type="tel"
                   name="phone"
                   value={values.phone}
-                  onChange={handleChangeForm}                  
-                  placeholder={guideTxts.phoneGuide}
+                  onChange={handleChangeForm}
                 />
               </div>
             </div>
