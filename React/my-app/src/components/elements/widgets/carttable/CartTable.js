@@ -40,7 +40,7 @@ export default function CartTable() {
                                     {
                                         cartDatas.map(item => (
                                             <CartListView
-                                            key = {item.id}
+                                                key = {item.id}
                                                 data = {item}
                                                 setCartDatas = {setCartDatas}
                                             />

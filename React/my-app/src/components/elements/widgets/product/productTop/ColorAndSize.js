@@ -5,7 +5,6 @@ export default function ColorAndSize({vData, setColor, setSize}) {
     const [isCheck, setIsCheck] = useState(false);
     const [sizeDatas, setSizeDatas] = useState([]);
 
-
     function toggleCheck(e) {
         setIsCheck(!isCheck);
         alert(e.target.value)
@@ -20,7 +19,7 @@ export default function ColorAndSize({vData, setColor, setSize}) {
         })
         .then(data => {
             setSizeDatas(data);
-            console.log(data);
+            console.log(data.variation);
         });
     },[process.IP, process.PORT]);
 

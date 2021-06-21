@@ -8,6 +8,8 @@ import ProductDetail from './components/pages/ProductDetail/ProductDetail';
 import ProductList from './components/pages/productlist/ProductList';
 import Features from './components/pages/Features/Features';
 import MyAccount from './components/pages/myaccount/MyAccount';
+import Test from './components/pages/Test/Test';
+import ReduxSample from './components/pages/reduxsample/ReduxSample';
 import './assets/css/mystyle.css';
 import './assets/css/style.css';
 import './assets/css/animate.css';
@@ -15,6 +17,9 @@ import './assets/css/bootstrap.css';
 import './assets/css/googlefont.css';
 import './assets/icons8/css/line-awesome.min.css';
 import ToTop from './utilities/ToTop';
+
+import { Provider } from 'react-redux';
+import store from './redux/store';
 
 function App() {
   return (
@@ -42,9 +47,20 @@ function App() {
           <Route exact path="/productlist">
             <ProductList />
           </Route>
+          <Route exact path="/productlist">
+            <ProductList />
+          </Route>
           <Route exact path="/myaccount">
             <MyAccount />
           </Route>
+          <Route exact path="/test">
+            <Test />
+          </Route>
+          <Provider store={store}>
+            <Route exact path="/reduxsample">
+              <ReduxSample />
+            </Route>
+          </Provider>
         </Switch>
       </ToTop>
     </BrowserRouter>
