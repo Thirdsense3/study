@@ -8,9 +8,9 @@
 - HTML,CSS,JS로 여러가지 예제 작성 with Jquery,Bootstrap (완료)
 - REACT JS로 쇼핑몰 제작 (완료)
   > 상품 목록, 카트, 위시리스트, 회원가입 구현
-- 스터디 매칭 웹사이트 (진행중)
-- Google CodeFest 2021 (진행중)
-- 주식 차트 어플 (예상)
+- 스터디 매칭 웹사이트 (종료)
+- Google CodeFest 2021 (완료)
+- 주식 차트 어플 (초기구성)
 
 🔥월 - LeetCode  
 🔥화 - CS공부  
