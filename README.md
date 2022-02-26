@@ -14,7 +14,7 @@
 
 🔥월 - LeetCode  
 🔥화 - CS공부  
-🔥수 - StudyMatcher Project 진행  
+🔥수 - 주식 차트 어플 진행  
 🔥목 - LeetCode  
 🔥금 - 프로젝트 추가진행  
 🔥토 - 못한 공부 진행  
