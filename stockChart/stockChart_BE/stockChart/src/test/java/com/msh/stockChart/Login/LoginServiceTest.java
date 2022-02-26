@@ -10,6 +10,8 @@ public class LoginServiceTest {
     LoginService loginService = new LoginServiceImpl();
     MemberService memberService = new MemberServiceImpl();
 
+//    test
+
     @Test
     void register(){
         Member member = new Member(1L,"abcdefg","abcd");
