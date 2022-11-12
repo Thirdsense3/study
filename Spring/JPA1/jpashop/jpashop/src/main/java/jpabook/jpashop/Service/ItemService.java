@@ -16,19 +16,27 @@ public class ItemService {
     public final ItemRepository itemRepository;
 
     @Transactional
-    public void saveItem(Item item){
+    public void saveItem(Item item) {
         itemRepository.save(item);
     }
 
-    public List<Item> findItems(){
+    //변경 감지 기능 사용
+    @Transactional
+    public void updateItem(Long itemId, String name, int price, int stockQuantity) {
+        Item findItem = itemRepository.findOne(itemId); // 영속 상태이므로 JPA 가 알아서 FLUSH
+        findItem.setPrice(price);
+        findItem.setName(name);
+        findItem.setStockQuantity(stockQuantity);
+
+    }
+
+    public List<Item> findItems() {
         return itemRepository.findAll();
     }
 
-    public Item findOne(Long itemId){
+    public Item findOne(Long itemId) {
         return itemRepository.findOne(itemId);
     }
-
-
 
 
 }
