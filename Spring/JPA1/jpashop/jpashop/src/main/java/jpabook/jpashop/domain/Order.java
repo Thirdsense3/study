@@ -71,9 +71,9 @@ public class Order {
     }
 
     //비즈니스 로직==//
-    /*
+    /**
     * 주문 취소
-    * */
+    */
     public void cancel(){
         if(delivery.getStatus() == DeliveryStatus.COMP){
             throw new IllegalStateException("이미 배송 완료된 상품은 취소가 불가능합니다.");
