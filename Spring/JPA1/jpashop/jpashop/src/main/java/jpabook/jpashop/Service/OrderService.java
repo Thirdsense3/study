@@ -40,11 +40,11 @@ public class OrderService {
 
         //주문 상품 생성
         OrderItem orderItem = OrderItem.createOrderItem(item, item.getPrice(), count);
-//        OrderItem orderItem1 = new OrderItem();
+        //OrderItem orderItem1 = new OrderItem();
 
         //주문 생성
         Order order = Order.creatOrder(member, delivery, orderItem);
-//        Order order1 = new Order();
+        //Order order1 = new Order();
 
         //주문 저장
         orderRepository.save(order);
