@@ -13,8 +13,7 @@ import java.io.IOException;
 public class RequestHeaderServlet extends HttpServlet {
 
     @Override
-    public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         printStartLine(request);
         printHeaders(request);
         printHeaderUtils(request);
