@@ -95,7 +95,7 @@ public class MemberRepositoryV4_2 implements MemberRepository{
             log.info("resultSize={}", resultSize);
 
         } catch (SQLException e) {
-            throw new MyDbException(e);
+            throw exTranslator.translate("update", sql, e);
         } finally {
             close(con, pstmt, null);
         }
